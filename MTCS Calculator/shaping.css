@@ -1,0 +1,59 @@
+*{
+border:0px;
+margin: 0px;
+box-sizing: border-box;
+
+}
+body{
+
+
+
+}
+#blueDiv{
+	border: 1px solid;
+	text-align: center;
+	background-color:skyblue;
+	margin: 100px auto;
+	padding: 20px;
+
+}
+			
+
+.topleftDiv,.topRightDiv, #calarea,#resultGreenDiv{
+
+	height: 200px;
+	width: 300px; 
+	display: inline-block;
+	background-color: black;
+	border-collapse: collapse;
+	margin: 0px;
+	border-radius: 45px;
+}
+#calarea{
+
+	padding: 50px;
+	background-color: black;
+	position: absolute;
+  left: 373px;
+  top: 120px;
+
+}
+#resultGreenDiv{
+	background-color: green;
+	width: 600px; 
+	margin: 0px auto;
+	padding: 25px;
+	font-weight: bolder;
+	font-size: 20px;
+	color: white;
+	 
+
+
+}
+.topleftDiv:first-child{
+	background-image: url("icons/calculator2.png");
+	background-size: contain;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-color: white;
+}

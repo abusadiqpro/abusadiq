@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>MTCSC</title>
+	<link rel="stylesheet" type="text/css" href="shaping.css">
+
+
+<!-- <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">></script> -->
+
+<script src="myjquery.js"></script>
+</head>
+<body>
+	<div id="calbodyDiv">
+		
+		<div id="blueDiv">
+			
+			<div id="topDiv">
+				<div class="topleftDiv" id="cal"></div>
+				<div class="topCalDiv" id="calarea">
+					
+					
+
+					<input type="type" name="amount" id="amount" placeholder="Amount Collected">
+					<br>
+					<input type="type" id="percentage"  placeholder="Percentage Charge">		
+					<br>			
+					<input type="type" id="duration"  placeholder="Duration (in Months)">
+					<br>
+					<input type="type" id="startDate"  placeholder="Effect from (Month - Year)">
+					<br>
+					<br>
+					<button onclick="turnover()">Calculate</button>
+					<button onclick="clear()"> Clear</button>
+					<button id="clossbutten">Closs</button>
+					
+				</div>
+				<div class="topRightDiv"></div>
+			
+			</div>
+			
+			<div id="bottom">
+					<div id="resultGreenDiv"></div>
+			</div>
+			
+		
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="javascript.js"></script>
+
+	<script src="jquery-3.2.0.js"></script>
+	<script>
+		
+		$(document).ready(function(){
+		
+
+		$("#calarea").hide();
+  		$("#cal").click(function(){
+    	$("#calarea").slideDown("slow");
+    	/*$("#bottomDiv").hide();
+*/
+		$("#clossbutten").click(function(){
+    	$("#calarea").slideUp();
+    		 
+  });
+		});
+});
+
+
+
+
+	</script>
+</body>
+</html>
